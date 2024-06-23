@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<?php
+
+    include ''
+
+  ?>  
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.php"><button type="button" class="btn btn-primary btn-volver" style="margin-left: 95%;">Volver</button></a>
+    <div class="container">
+        <h2 class="mb-4">Gestión de Alumnos</h2>
+        <form method="POST" action="../controlador/c_aceptar_rechazar.php" enctype= "multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" value="" >
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Contacto Personal</label>
+                        <input type="number" class="form-control" name="contacto_personal" value="" >
+                    </div>
+                
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" class="form-control" name="apellidos" value="" >
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Contacto de un Familiar o Tutor</label>
+                        <input type="text" class="form-control" id="apellidos" name="contacto_tutor" value="" >
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="curso">curso</label>
+                        <input type="number" class="form-control" id="apellidos" name="curso" value="" >
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Foto Carnet</label>
+                        <input type="file" class="form-control" name="foto_carnet" value="">
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Edad</label>
+                        <input type="number" class="form-control" name="edad" value="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Partida de Bautismo</label>
+                        <input type="file" class="form-control" id="apellidos" name="fotoautismo" value="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="domicilio">Domicilio</label>
+                        <input type="text" class="form-control" name="domicilio" value="">
+                    </div>
+                   
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="usuario">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="apellidos" name="nombre_usuario" value="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellidos">Traslado Foto</label>
+                        <input type="file" class="form-control" name="traslado_foto" value="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" name="contrasena" class="form-control" value="">
+                    </div>
+                     
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="nombre">Correo</label>
+                        <input type="email" class="form-control" id="nombre" name="correo" value="">
+                    </div>
+                    
+                </div>    
+            </div>
+
+            <div class="btn-group-center mt-4" style="margin-left: 45%;">
+            <textarea name="mensaje" style="margin-left: 0%;"></textarea><br>
+            <input type="submit" class="btn btn-danger mr-2" name="rechazar" value="RECHAZAR">
+            <input type="submit" class="btn btn-success mr-2" name="aceptar" value="ACEPTAR">
+        </div>
+        </form>
+        
+    </div>
+</body>
+</html>
